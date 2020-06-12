@@ -1,0 +1,59 @@
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+        audio_window_size: 16                            
+               batch_size: 1                             
+            cached_images: False                         
+          checkpoints_dir: ./checkpoints                 
+                 dataroot: ./datasets/ARD_ZDF            	[default: None]
+             dataset_mode: multi_face_audio_eq_tmp_cached	[default: aligned]
+                direction: AtoB                          
+          display_winsize: 512                           	[default: 256]
+                    epoch: latest                        
+            erosionFactor: 1.0                           
+                     eval: False                         
+                 fineSize: 512                           
+             fix_renderer: False                         
+                  gpu_ids: 0                             
+          hierarchicalTex: False                         
+                init_gain: 0.02                          
+                init_type: xavier                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+                 loadSize: 512                           
+                load_iter: 0                             	[default: 0]
+               look_ahead: True                          	[default: False]
+                 lossType: RMS                           	[default: L1]
+         max_dataset_size: inf                           
+                    model: audio2ExpressionsAttentionTMP4	[default: test]
+               n_layers_D: 3                             
+                     name: audio2ExpressionsAttentionTMP4-estimatorAttention-SL8-BS16-ARD_ZDF-multi_face_audio_eq_tmp_cached-RMS-20191105-115332-look_ahead	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+          no_augmentation: False                         
+               no_dropout: False                         
+                     norm: instance                      
+                    ntest: inf                           
+                 num_test: 50                            
+              num_threads: 4                             
+ output_audio_expressions: False                         
+                output_nc: 3                             
+                    phase: test                          
+                 renderer: no_renderer                   
+             rendererType: estimatorAttention            	[default: UNET_5_level]
+           resize_or_crop: resize_and_crop               
+              results_dir: ./results/                    
+                  seq_len: 8                             	[default: 1]
+           serial_batches: False                         
+             source_actor:                               
+               source_dir: ./datasets/                   
+                   suffix:                               
+             target_actor: ./datasets/TARGETS/Trump      	[default: ]
+                  tex_dim: 256                           
+             tex_features: 16                            
+tex_features_intermediate: 16                            
+             textureModel: DynamicNeuralTextureAudio     
+                  verbose: False                         
+          write_no_images: True                          	[default: False]
+----------------- End -------------------
